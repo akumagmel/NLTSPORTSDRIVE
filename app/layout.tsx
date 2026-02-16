@@ -1,4 +1,8 @@
-export const metadata = {
+// app/layout.tsx
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
   metadataBase: new URL("https://nltsportslease.rentals"),
   title: {
     default: "NLT SPORTS DRIVE",
@@ -34,3 +38,15 @@ export const metadata = {
     follow: true,
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
