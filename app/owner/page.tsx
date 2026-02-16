@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { CalendarDays, DollarSign, FileText, MapPin, Shield } from "lucide-react";
-import { Badge, Btn, CardBox, Dot } from "@/components/Shared";
+import { Badge, Btn, CardBox, Dot } from "@/components/shared";
 
 const demoVehicles = [
   { id: "VIN-001", title: "2022 Tesla Model 3", location: "Miami, FL", status: "Available", days: 226, est: 1480 },
