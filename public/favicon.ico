@@ -1,0 +1,4 @@
+ico=Image.new("RGB",(64,64),(0,0,0))
+d=ImageDraw.Draw(ico)
+d.text((16,18),"N",fill=(255,255,255))
+ico.save(os.path.join(base,"favicon.ico"),"ICO")
